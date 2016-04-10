@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_chatto_tv"
+        style="@style/chat_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2012-09-01 18:30:20" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/userinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/headicon_chatto_img"
+                android:layout_width="49dp"
+                android:layout_height="49dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/username_chatto_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="wzy" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chatcontent_chatto_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/userinfo"
+            android:background="@mipmap/send_msg"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:minHeight="20dp"
+            android:text="有大吗。。。"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:visibility="gone"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/chatAudio_chatto_bg"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/send_msg"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/userinfo">
+
+            <TextView
+                android:id="@+id/voicesecond_chatto_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2'"
+                />
+
+            <ImageView
+                android:id="@+id/chatAudio_chatto_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@mipmap/send_3"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

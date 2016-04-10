@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.test.view.MeinfoView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/meinfoview"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/gray"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/photo_info_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/actionbar_me" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/info_meinfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/actionbar_me" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_toEndOf="@+id/imageView1"
+                    android:text="个人信息"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/me_split_line_color" />
+
+
+            <RelativeLayout
+                android:id="@+id/setting_meinfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/actionbar_contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:text="设置"
+                    android:textSize="20sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/me_split_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/logout_meinfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/exit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:text="退出登录"
+                    android:textSize="20sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/me_split_line_color" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</com.test.view.MeinfoView>

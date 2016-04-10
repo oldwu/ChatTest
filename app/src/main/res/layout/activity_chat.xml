@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.test.view.ChatView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/head_title_chat" />
+
+    <LinearLayout
+
+        android:id="@+id/chatcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/title">
+
+        <ListView
+            android:listSelector="#00000000"
+            android:id="@+id/content_chat_lst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E5E5E5"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:id="@+id/switchvoice_chat_imgb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/voice" />
+
+        <RelativeLayout
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <EditText
+                android:id="@+id/edit_chat_edt"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:hint="输入"
+                android:visibility="visible"
+                android:textColorHighlight="@color/green" />
+
+            <com.test.view.AudioRecordButton
+                android:id="@+id/audiobutton_chat_btn"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_recode_normal"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/recorder_normal"
+                android:textColor="@color/bg_gray"
+                android:textSize="20sp"
+                android:maxHeight="0dp"
+                android:visibility="gone"
+
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sendmsg_chat_btn"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/register_btn_bg"
+            android:padding="5dp"
+            android:text="发送"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+
+</com.test.view.ChatView>
